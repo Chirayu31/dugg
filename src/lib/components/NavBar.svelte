@@ -11,33 +11,33 @@
 </script>
 
 <nav
-  class="flex mx-24 justify-between py-4 border-b-[1px] border-gray-300 text-gray-600"
+  class="flex mx-2 sm:mx-5 md:mx-10 lg:mx-24 justify-between py-4 border-b-[1px] border-gray-300 text-gray-600"
 >
   <div class="flex items-center gap-3">
     <img src="./logo.png" alt="logo" class="w-8 h-8" />
-    <p class="font-bold text-lg text-black">duggup</p>
+    <p class="font-bold text-lg text-black hidden sm:block">duggup</p>
   </div>
 
-  <div class="flex gap-10 items-center">
-    <Button variant="link" class="text-gray-600 hover:text-black">
+  <div class="flex gap-3 sm:gap-5 md:gap-3 lg:gap-10 items-center">
+    <p class="flex items-center text-gray-600 hover:text-black">
       <Home class="w-4 h-4 mr-2" />
-      Home
-    </Button>
+      <span class="hidden md:block">Home</span>
+    </p>
 
-    <Button variant="link" class="text-gray-600 hover:text-black">
+    <p class="flex items-center text-gray-600 hover:text-black">
       <ActivityLog class="w-4 h-4 mr-2" />
-      Explore
-    </Button>
-    <Button variant="link" class="text-gray-600 hover:text-black">
+      <span class="hidden md:block">Explore</span>
+    </p>
+    <p class="flex items-center text-gray-600 hover:text-black">
       <ViewVertical class="w-4 h-4 mr-2" />
-      Learn
-    </Button>
+      <span class="hidden md:block">Learn</span>
+    </p>
     <Button
       variant="secondary"
       class="bg-white border-[1px] drop-shadow-[0_4px_0px_rgba(77,77,77,1)] hover:bg-white text-gray-600 hover:text-black"
     >
       <Plus class="w-4 h-4 mr-2" />
-      Post
+      <p class="hidden md:block">Post</p>
     </Button>
 
     <DropdownMenu.Root>
@@ -48,7 +48,7 @@
             alt="profile-pic"
             class="w-10 h-10 rounded-full border-[3px] border-gray-300 object-cover"
           />
-          Krishna Kiran
+          <p class="hidden md:block">Krishna Kiran</p>
           <ChevronDown />
         </div>
       </DropdownMenu.Trigger>
