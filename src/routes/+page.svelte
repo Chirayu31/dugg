@@ -1,2 +1,15 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+  import NavBar from '$lib/components/NavBar.svelte'
+  import BioAndLink from '$lib/components/Profile/BioAndLink.svelte'
+  import Container from '$lib/components/Profile/Container.svelte'
+  import UserInfo from '$lib/components/Profile/UserInfo.svelte'
+</script>
+
+<NavBar />
+
+<main class="flex justify-center">
+  <Container>
+    <UserInfo />
+    <BioAndLink />
+  </Container>
+</main>
