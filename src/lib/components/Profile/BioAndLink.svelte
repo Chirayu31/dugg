@@ -1,22 +1,26 @@
-<script>
+<script lang="ts">
   import { ExternalLink } from 'svelte-radix'
   import Button from '../ui/button/button.svelte'
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu'
+
+  export let bio: string
+  export let companyName: string
+  export let companyLogo: string
+  export let position: string
+  export let website: string
 </script>
 
 <div class="flex flex-col gap-4">
   <div class="grid grid-cols-4">
     <div class="col-span-3">
       <p class="text-xs sm:text-sm md:text-base">
-        Co-Founder and CEO at Duggup - Social network for people in tech.
-        Ex-Amazon Head of Engineering. I write hot-takes on building a business,
-        shipping delightful products and accelerating product and career growth.
+        {bio}
       </p>
     </div>
     <div class="flex flex-col items-end col-span-1 gap-1">
-      <img src="./logo.png" alt="logo" class="w-8" />
-      <p class="font-bold text-sm sm:text-base md:text-lg">Duggup</p>
-      <p class="text-[6px] sm:text-[10px] text-gray-500">Co-founder and CEO</p>
+      <img src={companyLogo} alt="logo" class="w-8" />
+      <p class="font-bold text-sm sm:text-base md:text-lg">{companyName}</p>
+      <p class="text-[6px] sm:text-[10px] text-gray-500">{position}</p>
     </div>
   </div>
   <div class="flex justify-between items-center">
@@ -26,7 +30,7 @@
       Follow
     </Button>
     <div class="flex items-center gap-2">
-      <a href="/">
+      <a href={website}>
         <div class="text-xs flex items-center gap-2">
           <p>My Website</p>
           <ExternalLink class="w-4" />
