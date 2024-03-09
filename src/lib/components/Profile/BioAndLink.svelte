@@ -7,7 +7,7 @@
 <div class="flex flex-col gap-4">
   <div class="grid grid-cols-4">
     <div class="col-span-3">
-      <p class="text-base">
+      <p class="text-xs sm:text-sm md:text-base">
         Co-Founder and CEO at Duggup - Social network for people in tech.
         Ex-Amazon Head of Engineering. I write hot-takes on building a business,
         shipping delightful products and accelerating product and career growth.
@@ -15,8 +15,8 @@
     </div>
     <div class="flex flex-col items-end col-span-1 gap-1">
       <img src="./logo.png" alt="logo" class="w-8" />
-      <p class="font-bold text-lg">Duggup</p>
-      <p class="text-[10px] text-gray-500">Co-founder and CEO</p>
+      <p class="font-bold text-sm sm:text-base md:text-lg">Duggup</p>
+      <p class="text-[6px] sm:text-[10px] text-gray-500">Co-founder and CEO</p>
     </div>
   </div>
   <div class="flex justify-between items-center">
